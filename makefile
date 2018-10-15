@@ -1,6 +1,9 @@
-hepsi: derle calistir
+DerleCalistir: Derle Calistir
 
-derle:
-	g++ -I ./include -o ./lib/Okul.o -c ./src/Okul.cpp
-	g++ -I ./include -o /bin/ ./lib/Okul.o ./src/main.cpp
-calistir:
+Derle:okul main
+	g++ -I ./lib/Okul.o ./lib/main.o -o ./bin/program
+okul:
+	g++ -I "./include/" -c ./src/Okul.cpp -o ./lib/Okul.o
+main:
+	g++ -I "./include/" -c ./src/main.cpp -o ./lib/main.o
+Calistir:
