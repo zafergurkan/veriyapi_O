@@ -4,9 +4,21 @@
 using namespace std;
 
 Okul::Okul(int sayi){
-    this->sayi=sayi;
+   m_sayi=sayi;
     
 }
+void Okul::yazdir(){
+    
+    cout<<"sayi : "<<m_sayi<<endl;
+
+}
+
+void Okul::ekle(){
+    cout<<"Sayi : ";
+    cin>>m_eklenecek;
+    cout<<"Girilen sayi : "<<m_eklenecek<<endl;
+}
+
 /*void sinifYerlestir(){
     string line;
     ifstream reader("Okul.txt");
@@ -23,9 +35,3 @@ Okul::Okul(int sayi){
     }
     
 }*/
-
-void Okul::yerlestir(){
-    
-    cout<<"Oldu :D";
-
-}

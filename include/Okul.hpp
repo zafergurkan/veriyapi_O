@@ -1,14 +1,13 @@
 #ifndef Okul_HPP
 #define Okul_HPP
-
-#include <fstream>
-
-
 class Okul{
 public:
-    int sayi =15;
-    void yerlestir();
     Okul(int sayi);
+    void yazdir();
+    void ekle();
+private:
+    int m_sayi;
+    int m_eklenecek;
 
 };
 

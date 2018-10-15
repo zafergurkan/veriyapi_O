@@ -7,15 +7,16 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    Okul * k = new Okul(213);
+    k->yazdir();
+    k->ekle();
     bool cikis=true;
     int secenek=0;
     while(cikis){
         cout<<"1. Sinif Degistir"<<endl;
         cout<<"2. Ogrenci Degistir"<<endl;
         cout<<"3. Cikis"<<endl;
-        Okul *ok = new Okul(5);
-        cout<<ok->sayi<<endl;
-        //printf();
+        
         cin>>secenek;
 
         
