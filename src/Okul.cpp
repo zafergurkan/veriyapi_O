@@ -4,25 +4,12 @@
 using namespace std;
 
 Okul::Okul(){
-   cout<<"yapici fonksiyon calisti."<<endl;
+    printf("Okul yapici sinifi calisti\n");
     
 }
 
 
 void Okul::sinifYerlestir(){
-    string line;
-    ifstream reader("Okul.txt");
     
-    if (reader.is_open()) {
-        
-       
-       while(reader.good()){
-           getline(reader,line);
-           cout<<line<<endl;
-           /* code */
-           
-       }
-       
-    }
     
 }
