@@ -7,9 +7,10 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    Okul * k = new Okul(213);
-    k->yazdir();
-    k->ekle();
+    Okul * k = new Okul();
+    
+    
+
     bool cikis=true;
     int secenek=0;
     while(cikis){
@@ -23,7 +24,7 @@ int main(int argc, char const *argv[])
         switch (secenek)
         {
             case 1:
-                /* code */
+                k->sinifYerlestir();
                 break;
              case 2:
                 /* code */

@@ -2,12 +2,11 @@
 #define Okul_HPP
 class Okul{
 public:
-    Okul(int sayi);
-    void yazdir();
-    void ekle();
+    Okul();
+    void sinifYerlestir();
+
 private:
-    int m_sayi;
-    int m_eklenecek;
+
 
 };
 

@@ -1,25 +1,15 @@
 #include "Okul.hpp"
-
+#include <fstream>
 #include <iostream>
 using namespace std;
 
-Okul::Okul(int sayi){
-   m_sayi=sayi;
+Okul::Okul(){
+   cout<<"yapici fonksiyon calisti."<<endl;
     
 }
-void Okul::yazdir(){
-    
-    cout<<"sayi : "<<m_sayi<<endl;
 
-}
 
-void Okul::ekle(){
-    cout<<"Sayi : ";
-    cin>>m_eklenecek;
-    cout<<"Girilen sayi : "<<m_eklenecek<<endl;
-}
-
-/*void sinifYerlestir(){
+void Okul::sinifYerlestir(){
     string line;
     ifstream reader("Okul.txt");
     
@@ -29,9 +19,10 @@ void Okul::ekle(){
        while(reader.good()){
            getline(reader,line);
            cout<<line<<endl;
-           /* code 
+           /* code */
+           
        }
        
     }
     
-}*/
+}
