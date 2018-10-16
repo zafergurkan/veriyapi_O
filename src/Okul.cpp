@@ -7,9 +7,3 @@ Okul::Okul(){
     printf("Okul yapici sinifi calisti\n");
     
 }
-
-
-void Okul::sinifYerlestir(){
-    
-    
-}

@@ -1,5 +1,6 @@
 #include "Yonetim.hpp"
 #include "Okul.hpp"
+#include "Sinif.hpp"
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -21,18 +22,16 @@ void Yonetim::DosyaOku(){
        while(reader){
            reader.getline(str,255);
            line[a]=str;
-           a++;
-           
-        //if(reader) cout<<str<<"\n";
-           /* code */
-           
+           a++;           
        }
 
-       
-       for(size_t i = 1; i < a; i++)
+       //Sinif **sinifs;
+       //sinifs = new Sinif*[4];
+
+       for(size_t i = 0; i < a; i++)
        {
-           string sinif = line[i-1];
-           
+           string sinif = line[i];
+           //sinifs[i]=new Sinif(sinif[0]);
            cout<<"Sinif "<<sinif[0]<<" : "<<sinif<<endl;
            
        }
@@ -58,8 +57,7 @@ void Yonetim::menuOlustur(){
         switch (secenek)
         {
             case 1:
-                DosyaOku();
-                k->sinifYerlestir();      
+                DosyaOku();     
                 break;
              case 2:
                 printf("2 secildi.\n");
