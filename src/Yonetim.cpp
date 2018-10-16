@@ -12,6 +12,8 @@ Yonetim::Yonetim(){
 void Yonetim::DosyaOku(){
     string line[100];
     char str[255];
+    Sinif **sinifs;
+    sinifs = new Sinif*[4];
 
     ifstream reader("Okul.txt");
     
@@ -25,16 +27,20 @@ void Yonetim::DosyaOku(){
            a++;           
        }
 
-       //Sinif **sinifs;
-       //sinifs = new Sinif*[4];
+       
 
        for(size_t i = 0; i < a; i++)
        {
            string sinif = line[i];
-           //sinifs[i]=new Sinif(sinif[0]);
+           sinifs[i]=new Sinif(sinif[0]);
            cout<<"Sinif "<<sinif[0]<<" : "<<sinif<<endl;
            
        }
+      // Sinif * y = new Sinif();
+
+   // y->Yazdir(sinifs,4);
+
+      
        
        
        
